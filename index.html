@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Isaac Ugochukwu">
+  <meta name="description" content="Key - Password generator, generates strong password or keys">
+  <meta property="og:url" content="https://key.vercel.app">
+  <meta property="og:image" content="https://key.vercel.app/icon.png">
+  <meta property="og:description" content="Key 🔑 - Password generator, generates strong password or keys">
+  <title>Key 🔑 - Password generator, generates strong password or keys</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png">
+</head>
+
+<body>
+  <span id="menubtn" class="menubtn" onclick="showMenu()">&#9776;</span>
+  <h1>Key 🔑</h1>
+  <p>Password generator</p>
+
+  <main>
+    <div class="flex">
+      <input type="text" id="password" class="password" placeholder="[Password]"><button class="pb" id="hide" onclick="hide()">Hide</button><button class="pb none" id="show" onclick="show()">Show</button>
+      <button class="copy" id="copy" onclick="copy()">Copy</button>
+    </div>
+    <button class="btn" onclick="generatePassword()">Gen</button>
+  </main>
+
+  <section class="menu" id="menu">
+    <p class="back" id="back" onclick="back()">x</p>
+    <li><a href="https://wa.me/+2349033116563">Contact developer</a></li>
+  </section>
+  
+  <!--Load script-->
+  <script src="main.js"></script>
+</body>
+
+</html>

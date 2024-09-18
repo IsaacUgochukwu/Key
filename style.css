@@ -1,0 +1,176 @@
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  display: block;
+  font-weight: bolder;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4rem;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  margin-top: 60px;
+}
+
+main {
+  margin-top: 60px;
+  padding: 15px;
+  background-color: #B7B8C1AB;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 200px;
+}
+
+/* CLASSES */
+.password {
+  width: 90%;
+  height: 70px;
+  font: inherit;
+  font-size: 1rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  width: 90%;
+  height: 70px;
+  padding: 10px;
+  font: inherit;
+  border-radius: 2rem;
+  margin: 2rem auto;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.pb {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 60px;
+  height: 40px;
+  border: none;
+}
+
+.none {
+  display: none;
+}
+
+.copy {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 15px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  width: 60px;
+  height: 40px;
+  border: none;
+}
+
+.menu {
+  background-color: black;
+  opacity: 0.90;
+  color: white;
+  border-radius: 2rem;
+  padding: 10px;
+  position: fixed;
+  top: -180px;
+  width: 90%;
+  height: 180px;
+  transition: 1s ease-out all;
+}
+
+.menubtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  font-weight: bolder;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.menubtn:hover, .menubtn:active, .menubtn:focus {
+  transform: scale(120%);
+  opacity: 0.60;
+}
+
+.back {
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.back:hover, .back:active, .back:focus {
+  transform: scale(120%);
+  opacity: 0.60;
+}
+
+li {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: darkred;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.25px;
+}
+
+a:hover, a:active, a:focus {
+  opacity: 0.60;
+}
