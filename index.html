@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Isaac Ugochukwu">
-  <meta name="description" content="Key - Password generator, generates strong password or keys">
-  <meta property="og:url" content="https://key.vercel.app">
-  <meta property="og:image" content="https://key.vercel.app/icon.png">
-  <meta property="og:description" content="Key 🔑 - Password generator, generates strong password or keys">
-  <title>Key 🔑 - Password generator, generates strong password or keys</title>
+  <meta name="description" content="Key - Password generator, generates strong password or keys. Start generating your passwords with Key">
+  <meta property="og:title" content="Key 🔑">
+  <meta property="og:url" content="https://keypgen.vercel.app">
+  <meta property="og:image" content="https://keypgen.vercel.app/og-image.png">
+  <meta property="og:description" content="Key 🔑 - Password generator, generates strong password or keys. Start generating your passwords with Key">
+  <title>Key 🔑 - Password generator, generates strong password or keys. Start generating your passwords with Key</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="icon.png">
 </head>
@@ -18,8 +19,9 @@
 <body>
   <span id="menubtn" class="menubtn" onclick="showMenu()">&#9776;</span>
   <h1>Key 🔑</h1>
-  <p>Password generator</p>
+  <p class="writeup">Password generator. Start generating your passwords with Key!</p>
 
+  <div class="contentflx">
   <main>
     <div class="flex">
       <input type="text" id="password" class="password" placeholder="[Password]"><button class="pb" id="hide" onclick="hide()">Hide</button><button class="pb none" id="show" onclick="show()">Show</button>
@@ -31,6 +33,25 @@
   <section class="menu" id="menu">
     <p class="back" id="back" onclick="back()">x</p>
     <li><a href="https://wa.me/+2349033116563">Contact developer</a></li>
+    <li class="a">Saved Passwords &darr;</li>
+    <li class="nosave" id="nosave">No saved password! 😄</li>
+    
+    <section id="savesec" class="savesec">
+    </section>
+  </section>
+  </div>
+  
+  <section class="savebox" id="savebox">
+    <p>Why not save your password? 🤔</p>
+    <input type="text" placeholder="Give password name" id="pname">
+    <input type="password" id="generatedpassword">
+    <button id="showsave" class="pb" onclick="showsave()">show</button>
+    <button id="hidesave" class="pb none" onclick="hidesave()">hide</button>
+    
+    <div class="btnflx">
+    <button class="savebtn" onclick="savep()">Save</button>
+    <button class="savebtn" onclick="cancel()">Cancel</button>
+    </div>
   </section>
   
   <!--Load script-->
